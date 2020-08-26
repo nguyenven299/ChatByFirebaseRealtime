@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".View.StartActivity">
+
+    <TextView
+        android:id="@+id/AppChat"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp8"
+        android:text="App Chat"
+        android:textColor="#083A31"
+        android:textSize="@dimen/dp30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppChat"
+        android:background="@drawable/button_border"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="@dimen/dp20"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"></Button>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:background="@drawable/button_border2"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="@dimen/dp20"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"></Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dp170"
+        android:layout_height="@dimen/dp170"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/AppChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
